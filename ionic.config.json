@@ -1,0 +1,8 @@
+{
+  "name": "DeliveryApp",
+  "app_id": "f403d263",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
