@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="header">Restuarants</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content">
+
+  <ion-list>
+    <!-- <button (click)="onViewMenu(restaurant)" ion-item >
+        <ion-img [src]="restaurant.logo" item-left></ion-img>
+       <h2>{{restaurant.name}}</h2>
+      </button> -->
+
+  </ion-list>
+
+  <div *ngFor="let restaurant of listGroup.restaurants" class="area">
+    <ion-card (click)="onViewMenu(restaurant)" class="card">
+      <img class="image" src="{{restaurant.logo}}">
+    </ion-card>
+    <hr class="divider" />
+    <h6 class="name">{{restaurant.name}}</h6>
+  </div>
+
+</ion-content>

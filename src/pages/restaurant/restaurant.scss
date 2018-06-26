@@ -1,0 +1,44 @@
+page-restaurant {
+  .divider {
+    border: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #cf092c;
+    margin: 22px 0 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  .image {
+    width: 200px;
+    margin-left: 10%;
+    margin-right: -40%;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+  .btn {
+    display: inline-block;
+    text-align: center;
+    padding: 1.75em 3.5em;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+  }
+  .btn:hover {
+    box-shadow: 0 36px 28px -20px rgba(0, 0, 0, 0.2);
+    background-color: #c5092a;
+  }
+  .buttonCss {
+    background-color: white;
+    color: blue;
+    button {
+      color: blue;
+    }
+  }
+}

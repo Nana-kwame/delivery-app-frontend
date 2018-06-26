@@ -1,3 +1,5 @@
+import { OrdersPage } from './../orders/orders';
+import { RestaurantsPage } from './../restaurants/restaurants';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -6,6 +8,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  tab1Root : any = RestaurantsPage;
+  tab2Root : any = OrdersPage;
 
   constructor(public navCtrl: NavController) {
 

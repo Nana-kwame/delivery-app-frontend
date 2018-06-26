@@ -1,0 +1,85 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="header">{{name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="onDismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="input-form">
+    <h5 text-center>Contact Info</h5>
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="person"></ion-icon>
+        Name
+      </ion-label>
+      <ion-input [(ngModel)]="userName" placeholder="   Your name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="call"></ion-icon>
+        Phone Number
+      </ion-label>
+      <ion-input [(ngModel)]="phoneNumber" placeholder="xxx-xxxxxxx" type="text"></ion-input>
+    </ion-item>
+
+
+    <button ion-button outline block (click)="onLocate()">
+      <ion-icon name="locate"></ion-icon>
+      Locate Me
+    </button>
+
+
+
+
+  </div>
+
+
+  <div>
+    <h2 text-center>Your Order</h2>
+
+
+    <ion-grid *ngFor="let order of orders; let i = index">
+      <ion-row>
+        <ion-col text-center>
+          <h5>{{order}}</h5>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <button ion-button icon-left>
+              <ion-icon name="add-circle"></ion-icon>
+            </button>
+            <ion-label>Quantity: </ion-label>
+            <ion-input [value]="quantity[i]" [(ngModel)]="quantity[i]"></ion-input>
+            <button ion-button>
+              <ion-icon name="minus"></ion-icon>
+            </button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button outline block (click)="onRemoveOrder(order)" color="danger">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+
+  <button ion-button (click)="onOrder()" round full class="btn" [disabled]="disabled">Checkout</button>
+</ion-content>

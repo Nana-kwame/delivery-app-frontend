@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title class="header">Meal Set</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content">
+  <h3 text-center>Select your Meal Set</h3>
+
+  <!-- <ion-list no-lines>
+    <button ion-item *ngFor="let category of restuarantGroup" [navPush]="listPage" [navParams]="category">
+      <ion-icon [name]="category.icon" item-left></ion-icon>
+      <h2>{{ category.category | uppercase}}</h2>
+    </button>
+  </ion-list> -->
+<div class="card">
+  <ion-card *ngFor="let category of restuarantGroup" [navPush]="listPage" [navParams]="category">
+    <img src="{{category.icon}}">
+    <div class="meal-set">
+    <h2 class="card-title" text-center>{{ category.category | uppercase}}</h2>
+  </div>
+  </ion-card>
+</div>
+</ion-content>

@@ -1,0 +1,16 @@
+{
+    "riders":[
+        {
+            "name":"Theodore",
+            "phone_number":"0249337265",
+            "latitude": 5.5560,
+            "longitude": -0.1969
+        },
+        {
+            "name":"Nana Kwame",
+            "phone_number":"0572400922",
+            "latitude":5.606326,
+            "longitude":-0.236193
+        }
+    ]
+}

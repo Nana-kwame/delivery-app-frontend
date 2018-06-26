@@ -1,0 +1,57 @@
+page-list {
+  .name {
+    position: relative;
+    top: 10%;
+  }
+  .header {
+    background: linear-gradient(to right, #403a3e, #be5869);
+  }
+  .content {
+    line-height: 1.5;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0
+  }
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #403a3e;
+    left: 27.5%;
+  }
+  .card {
+    border-radius: 30px;
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 30px 25px -20px rgba(0, 0, 0, 0.15);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  
+  .name {
+    font-size: 30px;
+    color: #000;
+    margin: 0 0 0.5em 0;
+    line-height: 1.1;
+  }
+
+  .divider {
+    border: 10px;
+    height: 3px;
+    width: 30px;
+    background-color: #cf092c;
+    margin: 22px 0 20px;
+  }
+  
+}
